@@ -1,16 +1,23 @@
-<header class = "navbar navbar-fixed-top navbar-inverse">
-	<div class = "navbar-inner">
-		<div class = "container">
-			<%= link_to "help.the.chepang", root_path, id: "logo" %>
-			<nav>
-				<ul class = "nav pull-right">
-					<li class = "<%= 'active' if current_page?(root_path) %>" ><%= link_to "Home", root_url %></li>
-					<li class = "<%= 'active' if current_page?(how_path) %>"><%= link_to "How?", how_path %></li>
-					<li class = "<%= 'active' if current_page?('#') %>"><%= link_to "Donors", '#' %></li>
-					<li class = "<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
-					<li class = "<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
-				</ul>
-			</nav>
+<div class="navbar-wrapper">
+	<div class="container">
+		<div class = "navbar navbar-inverse navbar-fixed-top">
+			<div class = "navbar-inner">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+             	</button>
+				<%= link_to "help.the.chepang", root_path, id: "logo" %>
+				<nav class="nav-collapse collapse">
+					<ul class = "nav pull-right">
+						<li class = "<%= 'active' if current_page?(root_path) %>" ><%= link_to "Home", root_url %></li>
+						<li class = "<%= 'active' if current_page?(how_path) %>"><%= link_to "How?", how_path %></li>
+						<li class = "<%= 'active' if current_page?('#') %>"><%= link_to "Donors", '#' %></li>
+						<li class = "<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
+						<li class = "<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
-	</div>
-</header>
+	</div> 
+</div>
