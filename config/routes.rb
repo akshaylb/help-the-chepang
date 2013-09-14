@@ -1,9 +1,12 @@
 HelpChepang::Application.routes.draw do
+  resources :donors
   root 'static_pages#home'
   match '/how',to: 'static_pages#how', via: 'get'
   match '/why',to: 'static_pages#why', via: 'get'
   match '/about',to: 'static_pages#about', via: 'get'
   match '/contact',to: 'static_pages#contact', via: 'get'
+  match '/addhelp',to: 'donors#new', via: 'get'
+  match '/donors',to: 'donors#index', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

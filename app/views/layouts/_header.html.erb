@@ -13,7 +13,7 @@
 						<li class = "<%= 'active' if current_page?(root_path) %>" ><%= link_to "Home", root_url %></li>
 						<li class = "<%= 'active' if current_page?(why_path) %>" ><%= link_to "Why", why_url %></li>
 						<li class = "<%= 'active' if current_page?(how_path) %>"><%= link_to "How", how_path %></li>
-						<li class = "<%= 'active' if current_page?('#') %>"><%= link_to "Donors", '#' %></li>
+						<li class = "<%= 'active' if current_page?(donors_path) %>"><%= link_to "Donors", donors_path %></li>
 						<li class = "<%= 'active' if current_page?(about_path) %>"><%= link_to "About", about_path %></li>
 						<li class = "<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
 					</ul>

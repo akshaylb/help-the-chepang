@@ -1,0 +1,16 @@
+<% provide(:title, 'Add Donor') %>
+
+<div class="container featurette">
+	<h1 class="page-header">Add Donor</h1>
+		<div class="offset2 span4 hero-unit">
+		<%= form_for(@donor) do |f| %>
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+
+			<%= f.label :link %>
+			<%= f.text_field :link %>
+			<p align="center"><%= f.submit "Add Donor", class: "btn btn-large btn-primary"%></p>
+		<% end %>
+	</div>		
+</div>
+<hr>

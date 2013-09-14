@@ -1,0 +1,35 @@
+<% provide(:title, 'The Donors') %>
+<div class = "container" align="center">
+	<hr class="featurette-divider">
+		<div class="featurette"  align="center">
+			<h1 class="featurette-heading page-header"><strong>The DONORS</strong> <small>they have done their parts, will you?</small></h1>
+		</div>
+		<% count = 0 %>
+		<%= will_paginate %>
+		<div class = "offset1 span6 hero-unit">
+			<ul class="users">
+				<% @donors.each do |donor| %>
+					<li>
+						<%if count%2==0 %>
+							<p class="text-left">
+							<img class="gravatar-image img-circle img-polaroid" src="<%=asset_path "Donors/#{donor.id}.jpg"%>">
+						<%else%>
+							<p class="text-right">
+						<% end %>
+					  	<%if donor.link.empty? %>
+					  		<%= link_to donor.name, donors_path, class: "lead" %>
+						<% else %>					  		
+					  		<%= link_to donor.name, "http://#{donor.link}", class: "lead" %>
+				  		<% end %>
+				  		<%if count%2==1 %>
+							<img class="gravatar-image img-circle img-polaroid" src="<%=asset_path "Donors/#{donor.id}.jpg"%>">
+						<% end %>
+						</p>
+					</li>
+					<% count=count+1 %>
+				<% end %>
+			</ul>
+		</div>
+		<%= will_paginate %>
+	</hr>
+</div>
