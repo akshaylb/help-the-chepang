@@ -1,12 +1,15 @@
 <footer class="footer">
-	<small>
-		<em><strong>Help The Chepang</strong></em> is an initiative by Bishwas Chepang  
-	</small>
-	<nav>
-		<ul>
-			<li><%= link_to "About", about_path %></li>
-			<li><%= link_to "Contact", contact_path %></li>
-			<li>Website Developed by <a href="http://github.com/akshaylb/">Kuro</a></li>
-		</ul>
-	</nav>
+    <div class="container">
+	    <div class="span10">
+	        <%= link_to "help.the.chepang", root_path, class: "lead" %>
+	        <p>is an initiative by Biswash Chepang</p>
+	    </div>
+        <div class="row links-horizontal">
+            <ul>
+                <li><%= link_to "About", about_path %></li>
+    			<li><%= link_to "Contact", contact_path %></li>
+    			<li>Website Developed by <a href="http://github.com/akshaylb/">Kuro</a></li>
+            </ul>
+        </div>
+    </div>
 </footer>

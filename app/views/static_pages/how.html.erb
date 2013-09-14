@@ -1,3 +1,41 @@
 <% provide(:title, 'How?') %>
-<h1>How?</h1>
-<p>This is what all we gonna do</p>
+<div class = "container">
+	<hr class="featurette-divider">
+		<div class="featurette"  align="center">
+			<h1 class="featurette-heading page-header"><strong>How do WE</strong> <small>solve this problem?</small></h1>
+		</div>
+		<div class="featurette-how-points"  align="right">
+			<img class="featurette-image how pull-right img-circle img-polaroid" src="<%=asset_path "How/1.jpg"%>">
+			<p class="lead">Effective adult literacy classes</p>
+		</div>
+		<div class="featurette-how-points"  align="left">
+			<img class="featurette-image how pull-left img-circle img-polaroid" src="<%=asset_path "How/2.jpg"%>">
+			<p class="lead">Poultry farming, pig farming, and goat farming should be taught systematically and scientifically by an expert</p>
+		</div>
+		<div class="featurette-how-points"  align="right">
+			<img class="featurette-image how pull-right img-circle img-polaroid" src="<%=asset_path "How/3.jpg"%>">
+			<p class="lead">Provide agriculture loan, agricultural training about fertilizers and crops rotation strategies</p>
+		</div>
+		<div class="featurette-how-points"  align="left">
+			<img class="featurette-image how pull-left img-circle img-polaroid" src="<%=asset_path "How/4.jpg"%>">
+			<p class="lead">Enhance locally available handicrafts</p>
+		</div>
+		<div class="featurette-how-points"  align="right">
+			<img class="featurette-image how pull-right img-circle img-polaroid" src="<%=asset_path "How/5.jpg"%>">
+			<p class="lead">Help to mobilize locally available resources</p>
+		</div>
+		<div class="featurette-how-points"  align="left">
+			<img class="featurette-image how pull-left img-circle img-polaroid" src="<%=asset_path "How/6.jpg"%>">
+			<p class="lead">A school for community would be effective than government school</p>
+		</div>
+	</hr>
+	<hr>
+	<div class="hero-unit">
+		<h1 class="featurette-heading"><strong>Donate Now</strong> <small>or tell us how you can help!</small></h1>
+		<h2></h2>
+		<div class="row-fluid">
+			<div class="offset4 span2"><%= link_to "Donate Now!", '#', class: "btn btn-large btn-success" %></div>
+			<div class="span2"><%= link_to "Contact Us!", '#', class: "btn btn-large btn-primary" %></div>
+		</div>
+	</div>
+</div>

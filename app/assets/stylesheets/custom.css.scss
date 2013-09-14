@@ -12,7 +12,6 @@ html {
 /* Padding below the footer and lighter body text */
 
 body {
- 	padding-bottom: 40px;
  	color: #5a5a5a;
 }
 
@@ -26,8 +25,8 @@ textarea {
 
 .container {
     width: auto;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 120px;
+    margin-right: 120px;
 }​
 
 .center {
@@ -86,29 +85,36 @@ p {
 
 /* footer */
 
-footer {
+.footer {
+	position: relative;
 	margin-top: 45px;
-	padding-top: 5px;
-	border-top: 1px solid #eaeaea;
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-top: 3px solid #080808;
 	color: #999;
+	height: 100px;
+	clear:both;
+	background: #151515;
 }
 
-footer a {
+.footer a {
 	color: #555;
 }
 
-footer small {
+.footer small {
 	float: left;
+	font-size: 1em;
 	padding-left: 5px;
 }
 
-footer ul {
+.footer ul {
 	float: right;
 	list-style: none;
 	padding-right: 5px;
 }
 
-footer ul li {
+.footer ul li {
 	float: left;
 	margin-left: 10px;
 }
@@ -267,7 +273,7 @@ input {
 
 .carousel-control {
  height: 80px;
- margin-top: 0;
+ margin-top: 40px;
  font-size: 120px;
  text-shadow: 0 1px 1px rgba(0,0,0,.4);
  background-color: transparent;
@@ -340,14 +346,26 @@ input {
 ------------------------- */
 
 .featurette-divider {
- margin: 40px 0; /* Space out the Bootstrap <hr> more */
+ margin: 40px; /* Space out the Bootstrap <hr> more */
 }
 .featurette {
- padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+ padding-top: 80px; /* Vertically center images part 1: add padding above and below text. */
  overflow: hidden; /* Vertically center images part 2: clear their floats. */
 }
+
+.featurette-how-points{
+	padding-top: 40px;
+	padding-left: 60px;
+	padding-right: 60px;
+	overflow: hidden;	
+}
+
 .featurette-image {
- margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+ margin-top: -60px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+.featurette-image.how {
+ margin-top: -40px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 }
 
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
