@@ -12,7 +12,7 @@ class DonorsController < ApplicationController
   end
 
   def index
-    @donors=Donor.paginate(page: params[:page], per_page: 10)
+    @donors=Donor.paginate(page: params[:page], per_page: 10, order: 'name ASC')
   end
 
   private
